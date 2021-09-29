@@ -10,6 +10,6 @@ public class Fatorial {
 			fat *= i;
 		}
 
-		System.out.println("O fatorial de " + valor + " é igual a " + fat);
+		System.out.println("fatorial de " + valor + " é igual a " + fat);
 	}
 }
