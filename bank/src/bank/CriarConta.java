@@ -1,19 +1,22 @@
 package bank;
 
-public class CriarConta { 
+public class CriarConta {
 
     public static void main(String[] args) {
-        Conta p1 = new Conta();
-        p1.saldo = 200; 
-        System.out.println(p1.saldo); 
+        Conta primeiraConta = new Conta(6646,969060);
+        primeiraConta.deposita(200);
+        System.out.println(primeiraConta.getSaldo());
 
-        p1.saldo += 200;
-        System.out.println(p1.saldo);
+        primeiraConta.deposita(100);
+        System.out.println(primeiraConta.getSaldo());
 
-        Conta p2 = new Conta();
-        p2.saldo = 100;
+        Conta segundaConta = new Conta(6645,969061);
+        segundaConta.deposita(50);
 
-        System.out.println("primeira conta tem " + p1.saldo);
-        System.out.println("segunda conta tem " + p2.saldo);
+        System.out.println("primeira conta tem " + primeiraConta.getSaldo());
+        System.out.println("segunda conta tem " + segundaConta.getSaldo());
+
+        System.out.println("referenciar: " + primeiraConta);
     }
+
 }
